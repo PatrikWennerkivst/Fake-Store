@@ -12,7 +12,7 @@ function Card({ product, onBuyNow }) {
   }
 
   return (
-    <div className="card h-100 shadow">
+    <div className="card h-100" style={{ maxWidth: "98%", margin: "0 auto" }}>
       <div
         className="card-img-top d-flex justify-content-center align-items-center p-3"
         style={{ height: "200px" }}
@@ -45,10 +45,7 @@ function Card({ product, onBuyNow }) {
 
         <button
           className="btn btn-primary mt-auto"
-          onClick={() => {
-            console.log("Buy Now clicked for:", product);
-            onBuyNow(product);
-          }}
+          onClick={() => onBuyNow(product)}
         >
           Buy Now
         </button>

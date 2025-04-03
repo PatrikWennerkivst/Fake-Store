@@ -130,37 +130,37 @@ function App() {
         onAboutUsClick={toggleAboutUs}
       />
       <div className="container py-4">
-        {filteredProducts.length === 0 ? (
-          <div className="row">
-            <div className="col-12 text-center py-5">
-              <h3>No products found</h3>
-              <p>Try selecting a different category or refresh the page.</p>
-            </div>
-          </div>
-        ) : (
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-            {filteredProducts.map((product) => (
-              <div key={product.id} className="col mb-4 d-flex">
-                <Card product={product} onBuyNow={handleProductSelect} />
-              </div>
-            ))}
-          </div>
-        )}
+  {filteredProducts.length === 0 ? (
+    <div className="row">
+      <div className="col-12 text-center py-5">
+        <h3>No products found</h3>
+        <p>Try selecting a different category or refresh the page.</p>
       </div>
-      <div className="container">
-        <div className="row">
-          <div className="col-12 text-center py-4">
-            <Link
-              to="/checkout"
-              className="btn btn-primary btn-lg"
-              style={{ maxWidth: "300px" }}
-            >
-              Go to Checkout
-            </Link>
+    </div>
+  ) : (
+    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+      {filteredProducts.map((product) => (
+        <div key={product.id} className="col">
+          <Card product={product} onBuyNow={handleProductSelect} />
+        </div>
+      ))}
+    </div>
+  )}
+</div>
+        <div className="container">
+          <div className="row">
+            <div className="col-12 text-center py-4">
+              <Link
+                to="/checkout"
+                className="btn btn-primary btn-lg"
+                style={{ maxWidth: "300px" }}
+              >
+                Go to Checkout
+              </Link>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   );
 }
 

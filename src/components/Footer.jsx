@@ -59,7 +59,6 @@ const handleSubmit = (event) => {
                 <p>Thank you for signing up with {email}</p>
             ) : (
                 <ul className="list-unstyled">
-                <li>Sign up</li>
                 <form onSubmit={handleSubmit} id="checkout-form" noValidate>
                 <li>
                   <input

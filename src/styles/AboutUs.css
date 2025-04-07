@@ -204,3 +204,74 @@ body {
     border: none;
     border-radius: 4px;
   }
+  /* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 1024px) {
+  .main-content {
+    padding: 2rem;
+  }
+
+  .card {
+    min-width: 300px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .main-content {
+    padding: 2rem 1rem;
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .content-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 95%;
+    min-width: unset;
+    padding: 2rem 1.5rem;
+  }
+
+  .card-body button {
+    width: 100%;
+  }
+
+  iframe {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+  }
+
+  .card-body input,
+  .card-body textarea {
+    font-size: 0.85rem;
+  }
+
+  .card-body button {
+    font-size: 0.9rem;
+  }
+
+  .card-header {
+    font-size: 0.9rem;
+  }
+  
+}

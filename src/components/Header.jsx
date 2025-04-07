@@ -15,7 +15,7 @@ function Header() {
     <div className="container-sm py-1">
     <header className="navbar">
       {/* Logo */}
-      <div className="logo-container mx-auto">
+      <div className="logo-container mx-auto ">
         <Link to="/">
           <img src={logo} alt="Faux Finds Logo" className="logo" />
         </Link>

@@ -10,7 +10,6 @@ import CategoryFilter from "../components/CategoryFilter";
 function App() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [error, setError] = useState(null);
   const [selectedProduct, setSelectedProduct] = useState(null);
